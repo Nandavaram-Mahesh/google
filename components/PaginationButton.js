@@ -9,7 +9,7 @@ const PaginationButton = () => {
   return (
     <div className="flex justify-between max-w-lg text-blue-500 mb-10">
         {startIndex>=10  && (
-            <Link href=''>
+            <Link href={`/search?term=${router.query.term}&start=${startIndex}`}>
                 <div className='flex flex-col flex-grow items-center cursor-pointer hover:underline'>
                     <ChevronLeftIcon className='h-5'/>
                     <p>Previous</p>

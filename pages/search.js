@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '../components/Header'
 import SearchResults from '../components/SearchResults'
 import Response from '../Response'
-const search = ({results}) => {
+const Search = ({results}) => {
     const router = useRouter()
     console.log(results)
   return (
@@ -21,7 +21,7 @@ const search = ({results}) => {
   )
 }
 
-export default search
+export default Search
 
 export async function getServerSideProps(context){
     const API_KEY = process.env.API_KEY
