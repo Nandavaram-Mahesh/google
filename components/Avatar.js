@@ -5,8 +5,10 @@ const Avatar = ({url,className}) => {
   return (
     <Image 
     src={url}
+    width={50}
+    height={50}
     alt="profilePicture"
-    className={`h-10 transition duration-100 transform hover:scale-110 ${className}`}
+    className={` transition duration-100 transform hover:scale-110 ${className}`}
     />
 
     
